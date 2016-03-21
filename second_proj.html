@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title> user form </title>
+ <style type="text/css">
+  #inf{color:red;};
+  </style>
+ </head>
+ <body>
+ <h1 align="center" style="color:red;"> User Table </h1>
+ <form action="login.php" method="post">
+  <fieldset style="padding:2%;position:absolute;margin-left:37%;margin-top:1%;box-shadow:8px 8px 8px grey;">
+  <legend style="font-weight:bold;font-size:20px;"> Personal details <em id="inf"> * </em></legend>
+  <table>
+  <tr>
+  <td> Title </td>
+  <td><select name="start[]">
+  <option> Mr </option>
+  <option> Mrs </option></select></td>
+  </tr>
+  <tr>
+  <td> First name</td>
+  <td><input type="text" name="First_name" value=""/></td>
+  </tr>
+  <tr>
+  <td> Last name</td>
+  <td><input type="text" name="Last_name" value=""/></td>
+  </tr>
+  </table>
+  </fieldset>
+  <fieldset style="padding:2%;position:absolute;margin-left:37%;margin-top:16%;box-shadow:8px 8px 8px grey;">
+  <legend style="font-weight:bold;font-size:20px;"> Contact details <em id="inf"> * </em></legend>
+  <table>
+  <tr>
+  <td> E-mail id</td>
+  <td><input type="text" name="E-mail_id" value=""/></td>
+  </tr>
+  <tr>
+  <td> Phone number</td>
+  <td><input type="text" id="Phone_number" name="Phone_number" value="" oninput="phone(this)"/></td>
+  </tr>
+  </table>
+  </fieldset>
+  <fieldset style="padding:4%;position:absolute;margin-left:37%;margin-top:28%;line-height:1.5em;box-shadow:8px 8px 8px grey;">
+  <legend style="font-weight:bold;font-size:20px;"> Car details <em id="inf"> * </em></legend>
+  <table>
+  <tr>
+  <td> Car Model</td>
+  <td><input type="text" name="Car_Model" value=""/></td>
+  </tr>
+  <tr>
+  <td> Car number</td>
+  <td><input type="text" name="Car_number" placeholder="ex: Dl 3c 2837"value=""/></td>
+  </tr>
+  <tr>
+  <td><input type="submit" name="submitvalue" style="display:block;background-color:#00ff00;margin-left:30%;position:absolute;border:1px solid white;padding:2%;font-weight:bold;" value="send"/></td>
+  </tr>
+  </table>
+  </fieldset>
+  </form>
+  <p style="margin-top:40%;margin-left:69%;position:absolute;"> Already user <a href="login.html"> click here </a> to login </p>
+ </body>
+</html>
